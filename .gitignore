@@ -16,4 +16,4 @@ suite.local.env
 launcher*.log
 prefetch_report.json
 .rollback_*/
-datasets/
+datasets/long_context/ruler/*samples

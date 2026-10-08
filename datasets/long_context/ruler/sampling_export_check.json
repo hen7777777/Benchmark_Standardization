@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "canonical_location": "datasets/long_context/ruler",
+  "generation_side_records": "ruler/metadata",
+  "exports": {
+    "sampling_subsets.json": {
+      "origin": "ruler/metadata/subsets.json",
+      "sha256": "9ee81fe144f559745d08ebbbacfa866ae9807798ebc0f1b072659195d98b42bf",
+      "byte_identical": true
+    },
+    "length_statistics.json": {
+      "origin": "ruler/metadata/length_statistics.json",
+      "sha256": "1d0c1565df4f7af45f2b9b8fbc4881c3279f60d0fcf6b41ebda8e57dc3aea5e6",
+      "byte_identical": true
+    },
+    "generation_protocol.json": {
+      "origin": "ruler/metadata/protocol.json",
+      "sha256": "d2fcf96ecc80445aea5dc9efc95534a727930e7b958783a5e447181ec32a678a",
+      "byte_identical": true
+    },
+    "generation_commands.json": {
+      "origin": "ruler/metadata/generation_commands.json",
+      "sha256": "c05122770fee1fa1c0964c182afdc4a7e12aa02f45c8358eb8700890cdb0dba6",
+      "byte_identical": true
+    },
+    "qa_sampling.json": {
+      "origin": "ruler/data_audit.json#qa_sampling",
+      "extracted_section": true,
+      "source_ids_matched": true
+    },
+    "SAMPLING_PROTOCOL.md": {
+      "origin": "ruler/SAMPLING_PROTOCOL.md",
+      "copy_contains_original": true,
+      "verified": true,
+      "original_sha256": "011855503eea639f573eddf7e50fea580cdf31a9fb41afb079721c28806ae288"
+    }
+  },
+  "note": "Sampling rules are published together with the frozen samples. ruler/metadata keeps generation-side originals; hash equality is re-checked here."
+}

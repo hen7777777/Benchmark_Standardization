@@ -113,12 +113,11 @@ LMEVAL_PYTHON=/path/to/venv/bin/python
 -   **预检失败不占卡**：服务在预检全部通过之后才启动，因此任务名、数据缓存或长度有问题时，
     不会先把模型加载进显存。
 
-## GPU 选择与退出看门狗
+## GPU 选择与退出监控
 
 **不自动选卡。** `--gpu` 必填，值是 `CUDA_VISIBLE_DEVICES` 的物理卡号，个数必须与 `--tensor-parallel-size` 一致。共享机器上“看起来空闲”的卡随时可能被别人占走，把运行悄悄换到另一张卡会让结果难以归因，所以套件不做空闲探测；传 `auto` 会直接报错。要并行多个评测就分别指定卡号；同一张卡跑多个进程也是允许的（各自设相同的 `CUDA_VISIBLE_DEVICES`），套件不持有任何锁。
 
 **结果已落盘但进程不退出时自动收尾。** 原生阶段一旦写出 `results_*.json`（实际路径是 `<stage>/results/<model_name>/results_<时间戳>.json`）就说明评测已经算完，剩下的只是退出；如果之后整个 `results` 目录和日志都静默超过 `--shutdown-grace` 秒（默认 60）仍不退出（vLLM 引擎常见），套件会向进程组发 `SIGTERM`、必要时再 `SIGKILL`。此时结果保留、该阶段按成功计，`runs/<name>/<stage>/exit.json` 的 `watchdog` 字段与 `native.log` 末尾会记录这次强制收尾，`manifest.json` 也记了 `shutdown_grace`。看门狗按“日志与 results 目录里最新文件时间”判断是否静默，因此不会把正在写 `samples_*.jsonl` 的正常收尾误判成卡死；想更保守可以调大，例如 `--shutdown-grace 180`。
-
 
 ## 预检并行执行
 
@@ -137,7 +136,6 @@ PREFLIGHT DONE: 6/6 passed in 20.0s wall (74.6s of stage time)
 按阶段分开存放，因此一次就能看全，不必逐个重跑。`--preflight-jobs N` 可以限制并发数
 （默认 `0` = 全部同时启动）；`--preflight-only` 仍然只跑这一轮预检就退出。
 `manifest.json` 记录 `preflight_jobs` 与该轮总墙钟时间 `preflight_wall_seconds`。
-
 
 ## 阶段选择（--stages）
 
