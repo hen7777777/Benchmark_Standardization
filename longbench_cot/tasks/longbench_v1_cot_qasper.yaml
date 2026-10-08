@@ -1,0 +1,23 @@
+task: longbench_v1_cot_qasper
+tag:
+  - longbench_v1_cot_tasks
+dataset_path: Xnhyacinth/LongBench
+test_split: test
+dataset_name: qasper
+doc_to_text: "You are given a scientific article and a question. Answer the question as concisely as you can, using a single phrase or sentence if possible. If the question cannot be answered based on the information in the article, write \"unanswerable\". If the question is a yes/no question, answer \"yes\", \"no\", or \"unanswerable\". Do not provide any explanation.\n\nArticle: {{context}}\n\n Answer the question based on the above article as concisely as you can, using a single phrase or sentence if possible. If the question cannot be answered based on the information in the article, write \"unanswerable\". If the question is a yes/no question, answer \"yes\", \"no\", or \"unanswerable\". Do not provide any explanation.\n\nQuestion: {{question}}\n\nAnswer:\n\nLet's think step by step, then write your final answer on a new line starting with \"Final answer:\"."
+doc_to_target: '{{answers}}'
+process_results: !function runtime_utils.v1_qa_f1
+generation_kwargs:
+  max_gen_toks: 1024
+  do_sample: false
+  temperature: 0.0
+  until: []
+metric_list:
+  - metric: score
+    aggregation: mean
+    higher_is_better: true
+  - metric: qa_f1_score
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1

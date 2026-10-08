@@ -1,0 +1,27 @@
+group: longbench_v1_cot
+group_alias: LongBench v1 chain-of-thought
+task:
+  - longbench_v1_cot_2wikimqa
+  - longbench_v1_cot_dureader
+  - longbench_v1_cot_gov_report
+  - longbench_v1_cot_hotpotqa
+  - longbench_v1_cot_lsht
+  - longbench_v1_cot_multi_news
+  - longbench_v1_cot_multifieldqa_en
+  - longbench_v1_cot_multifieldqa_zh
+  - longbench_v1_cot_musique
+  - longbench_v1_cot_narrativeqa
+  - longbench_v1_cot_passage_count
+  - longbench_v1_cot_passage_retrieval_en
+  - longbench_v1_cot_passage_retrieval_zh
+  - longbench_v1_cot_qasper
+  - longbench_v1_cot_qmsum
+  - longbench_v1_cot_samsum
+  - longbench_v1_cot_trec
+  - longbench_v1_cot_triviaqa
+  - longbench_v1_cot_vcsum
+aggregate_metric_list:
+  - metric: score
+    weight_by_size: false
+metadata:
+  version: 1

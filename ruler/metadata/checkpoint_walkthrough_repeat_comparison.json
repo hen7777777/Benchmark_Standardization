@@ -1,0 +1,106 @@
+{
+  "same_sample_ids": true,
+  "same_data_and_harness_arguments": true,
+  "samples_compared": 130,
+  "changed_predictions": 6,
+  "changed_scores": 2,
+  "differences": [
+    {
+      "sample_id": "niah_multivalue/4096/006",
+      "old_prediction": [
+        ":\n\n- 4495397  \n- 5236705  \n- 7449293  \n- 2541671"
+      ],
+      "new_prediction": [
+        ":\n\n1. 4495397  \n2. 5236705  \n3. 7449293  \n4. 2541671"
+      ],
+      "old_score": 100.0,
+      "new_score": 100.0,
+      "reference": [
+        "7449293",
+        "4495397",
+        "2541671",
+        "5236705"
+      ]
+    },
+    {
+      "sample_id": "niah_single_2/4096/078",
+      "old_prediction": [
+        ": **8909573**."
+      ],
+      "new_prediction": [
+        " **8909573**."
+      ],
+      "old_score": 100.0,
+      "new_score": 100.0,
+      "reference": [
+        "8909573"
+      ]
+    },
+    {
+      "sample_id": "qa_1/4096/091",
+      "old_prediction": [
+        " Victoria is located in the south-east of Australia."
+      ],
+      "new_prediction": [
+        " Victoria is a state in the south-east of Australia."
+      ],
+      "old_score": 100.0,
+      "new_score": 100.0,
+      "reference": [
+        "south-east",
+        "south-east",
+        "the south-east of Australia"
+      ]
+    },
+    {
+      "sample_id": "qa_2/4096/044",
+      "old_prediction": [
+        " 138 AD."
+      ],
+      "new_prediction": [
+        " 138."
+      ],
+      "old_score": 0.0,
+      "new_score": 0.0,
+      "reference": [
+        "24 January 76 – 10 July 138"
+      ]
+    },
+    {
+      "sample_id": "vt/4096/026",
+      "old_prediction": [
+        " MTZHE PPSDN MZVEJ"
+      ],
+      "new_prediction": [
+        " MTZHE VAR GMXVM VAR PPSDN VAR MZVEJ"
+      ],
+      "old_score": 60.0,
+      "new_score": 80.0,
+      "reference": [
+        "MTZHE",
+        "GMXVM",
+        "NPDCD",
+        "PPSDN",
+        "MZVEJ"
+      ]
+    },
+    {
+      "sample_id": "vt/4096/041",
+      "old_prediction": [
+        " VAR FCBTX VAR IHNUH VAR SIQBK VAR AXLIZ"
+      ],
+      "new_prediction": [
+        " VAR FCBTX"
+      ],
+      "old_score": 80.0,
+      "new_score": 20.0,
+      "reference": [
+        "FCBTX",
+        "IHNUH",
+        "HDBQE",
+        "SIQBK",
+        "AXLIZ"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+task: longbench_v1_cot_samsum
+tag:
+  - longbench_v1_cot_tasks
+dataset_path: Xnhyacinth/LongBench
+test_split: test
+dataset_name: samsum
+doc_to_text: "Summarize the dialogue into a few short sentences. The following are some examples.\n\n{{context}}\n{{question}}\n\nLet's think step by step, then write your final answer on a new line starting with \"Final answer:\"."
+doc_to_target: '{{answers}}'
+process_results: !function runtime_utils.v1_rouge
+generation_kwargs:
+  max_gen_toks: 1024
+  do_sample: false
+  temperature: 0.0
+  until: []
+metric_list:
+  - metric: score
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge_score
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1

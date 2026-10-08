@@ -1,0 +1,1539 @@
+{
+  "qa": {
+    "squad.json": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json",
+    "hotpotqa.json": "https://huggingface.co/datasets/namlh2004/hotpotqa/resolve/7e54db4656209750ff487f6fdf8e39a66dba136b/hotpot_dev_distractor_v1.json"
+  },
+  "english_words": "https://media.githubusercontent.com/media/NVIDIA/RULER/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/scripts/data/synthetic/json/english_words.json",
+  "essays": [
+    {
+      "url": "http://www.paulgraham.com/13sentences.html",
+      "effective_url": "https://www.paulgraham.com/13sentences.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/13sentences.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/5founders.html",
+      "effective_url": "https://www.paulgraham.com/5founders.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/5founders.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/6631327.html",
+      "effective_url": "https://www.paulgraham.com/6631327.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/6631327.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/95.html",
+      "effective_url": "https://www.paulgraham.com/95.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/95.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ace.html",
+      "effective_url": "https://www.paulgraham.com/ace.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ace.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/airbnb.html",
+      "effective_url": "https://www.paulgraham.com/airbnb.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/airbnb.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/airbnbs.html",
+      "effective_url": "https://www.paulgraham.com/airbnbs.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/airbnbs.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/alien.html",
+      "effective_url": "https://www.paulgraham.com/alien.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/alien.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/altair.html",
+      "effective_url": "https://www.paulgraham.com/altair.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/altair.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ambitious.html",
+      "effective_url": "https://www.paulgraham.com/ambitious.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ambitious.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/america.html",
+      "effective_url": "https://www.paulgraham.com/america.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/america.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/angelinvesting.html",
+      "effective_url": "https://www.paulgraham.com/angelinvesting.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/angelinvesting.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/artistsship.html",
+      "effective_url": "https://www.paulgraham.com/artistsship.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/artistsship.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/badeconomy.html",
+      "effective_url": "https://www.paulgraham.com/badeconomy.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/badeconomy.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/better.html",
+      "effective_url": "https://www.paulgraham.com/better.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/better.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/bronze.html",
+      "effective_url": "https://www.paulgraham.com/bronze.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/bronze.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/bubble.html",
+      "effective_url": "https://www.paulgraham.com/bubble.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/bubble.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/charisma.html",
+      "effective_url": "https://www.paulgraham.com/charisma.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/charisma.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/cities.html",
+      "effective_url": "https://www.paulgraham.com/cities.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/cities.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/college.html",
+      "effective_url": "https://www.paulgraham.com/college.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/college.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/colleges.html",
+      "effective_url": "https://www.paulgraham.com/colleges.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/colleges.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/conformism.html",
+      "effective_url": "https://www.paulgraham.com/conformism.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/conformism.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/control.html",
+      "effective_url": "https://www.paulgraham.com/control.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/control.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/convergence.html",
+      "effective_url": "https://www.paulgraham.com/convergence.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/convergence.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/convince.html",
+      "effective_url": "https://www.paulgraham.com/convince.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/convince.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/cred.html",
+      "effective_url": "https://www.paulgraham.com/cred.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/cred.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/credentials.html",
+      "effective_url": "https://www.paulgraham.com/credentials.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/credentials.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/determination.html",
+      "effective_url": "https://www.paulgraham.com/determination.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/determination.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/die.html",
+      "effective_url": "https://www.paulgraham.com/die.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/die.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/disagree.html",
+      "effective_url": "https://www.paulgraham.com/disagree.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/disagree.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/disc.html",
+      "effective_url": "https://www.paulgraham.com/disc.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/disc.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/discover.html",
+      "effective_url": "https://www.paulgraham.com/discover.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/discover.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/distraction.html",
+      "effective_url": "https://www.paulgraham.com/distraction.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/distraction.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/divergence.html",
+      "effective_url": "https://www.paulgraham.com/divergence.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/divergence.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/donate.html",
+      "effective_url": "https://www.paulgraham.com/donate.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/donate.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ds.html",
+      "effective_url": "https://www.paulgraham.com/ds.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ds.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/early.html",
+      "effective_url": "https://www.paulgraham.com/early.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/early.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/earnest.html",
+      "effective_url": "https://www.paulgraham.com/earnest.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/earnest.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/equity.html",
+      "effective_url": "https://www.paulgraham.com/equity.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/equity.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/essay.html",
+      "effective_url": "https://www.paulgraham.com/essay.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/essay.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ffb.html",
+      "effective_url": "https://www.paulgraham.com/ffb.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ffb.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/fh.html",
+      "effective_url": "https://www.paulgraham.com/fh.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/fh.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/fix.html",
+      "effective_url": "https://www.paulgraham.com/fix.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/fix.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/fn.html",
+      "effective_url": "https://www.paulgraham.com/fn.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/fn.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/foundersatwork.html",
+      "effective_url": "https://www.paulgraham.com/foundersatwork.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/foundersatwork.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/fp.html",
+      "effective_url": "https://www.paulgraham.com/fp.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/fp.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/fr.html",
+      "effective_url": "https://www.paulgraham.com/fr.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/fr.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/fundraising.html",
+      "effective_url": "https://www.paulgraham.com/fundraising.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/fundraising.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/future.html",
+      "effective_url": "https://www.paulgraham.com/future.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/future.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/genius.html",
+      "effective_url": "https://www.paulgraham.com/genius.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/genius.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/getideas.html",
+      "effective_url": "https://www.paulgraham.com/getideas.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/getideas.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/good.html",
+      "effective_url": "https://www.paulgraham.com/good.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/good.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/goodart.html",
+      "effective_url": "https://www.paulgraham.com/goodart.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/goodart.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/googles.html",
+      "effective_url": "https://www.paulgraham.com/googles.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/googles.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/greatwork.html",
+      "effective_url": "https://www.paulgraham.com/greatwork.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/greatwork.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/growth.html",
+      "effective_url": "https://www.paulgraham.com/growth.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/growth.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/guidetoinvestors.html",
+      "effective_url": "https://www.paulgraham.com/guidetoinvestors.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/guidetoinvestors.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hackernews.html",
+      "effective_url": "https://www.paulgraham.com/hackernews.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hackernews.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/head.html",
+      "effective_url": "https://www.paulgraham.com/head.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/head.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/herd.html",
+      "effective_url": "https://www.paulgraham.com/herd.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/herd.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/heresy.html",
+      "effective_url": "https://www.paulgraham.com/heresy.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/heresy.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/heroes.html",
+      "effective_url": "https://www.paulgraham.com/heroes.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/heroes.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/highres.html",
+      "effective_url": "https://www.paulgraham.com/highres.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/highres.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hiresfund.html",
+      "effective_url": "https://www.paulgraham.com/hiresfund.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hiresfund.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hiring.html",
+      "effective_url": "https://www.paulgraham.com/hiring.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hiring.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hp.html",
+      "effective_url": "https://www.paulgraham.com/hp.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hp.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hs.html",
+      "effective_url": "https://www.paulgraham.com/hs.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hs.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hundred.html",
+      "effective_url": "https://www.paulgraham.com/hundred.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hundred.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hw.html",
+      "effective_url": "https://www.paulgraham.com/hw.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hw.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/hwh.html",
+      "effective_url": "https://www.paulgraham.com/hwh.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/hwh.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/icad.html",
+      "effective_url": "https://www.paulgraham.com/icad.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/icad.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ideas.html",
+      "effective_url": "https://www.paulgraham.com/ideas.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ideas.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/identity.html",
+      "effective_url": "https://www.paulgraham.com/identity.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/identity.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ineq.html",
+      "effective_url": "https://www.paulgraham.com/ineq.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ineq.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/inequality.html",
+      "effective_url": "https://www.paulgraham.com/inequality.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/inequality.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/investors.html",
+      "effective_url": "https://www.paulgraham.com/investors.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/investors.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/invtrend.html",
+      "effective_url": "https://www.paulgraham.com/invtrend.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/invtrend.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/javacover.html",
+      "effective_url": "https://www.paulgraham.com/javacover.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/javacover.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/jessica.html",
+      "effective_url": "https://www.paulgraham.com/jessica.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/jessica.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/judgement.html",
+      "effective_url": "https://www.paulgraham.com/judgement.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/judgement.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/kate.html",
+      "effective_url": "https://www.paulgraham.com/kate.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/kate.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/kids.html",
+      "effective_url": "https://www.paulgraham.com/kids.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/kids.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ladder.html",
+      "effective_url": "https://www.paulgraham.com/ladder.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ladder.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/lesson.html",
+      "effective_url": "https://www.paulgraham.com/lesson.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/lesson.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/lies.html",
+      "effective_url": "https://www.paulgraham.com/lies.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/lies.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/lwba.html",
+      "effective_url": "https://www.paulgraham.com/lwba.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/lwba.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/mac.html",
+      "effective_url": "https://www.paulgraham.com/mac.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/mac.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/makersschedule.html",
+      "effective_url": "https://www.paulgraham.com/makersschedule.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/makersschedule.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/marginal.html",
+      "effective_url": "https://www.paulgraham.com/marginal.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/marginal.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/maybe.html",
+      "effective_url": "https://www.paulgraham.com/maybe.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/maybe.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/mean.html",
+      "effective_url": "https://www.paulgraham.com/mean.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/mean.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/microsoft.html",
+      "effective_url": "https://www.paulgraham.com/microsoft.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/microsoft.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/mit.html",
+      "effective_url": "https://www.paulgraham.com/mit.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/mit.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/name.html",
+      "effective_url": "https://www.paulgraham.com/name.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/name.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/nerds.html",
+      "effective_url": "https://www.paulgraham.com/nerds.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/nerds.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/newthings.html",
+      "effective_url": "https://www.paulgraham.com/newthings.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/newthings.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/noob.html",
+      "effective_url": "https://www.paulgraham.com/noob.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/noob.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/noop.html",
+      "effective_url": "https://www.paulgraham.com/noop.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/noop.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/notnot.html",
+      "effective_url": "https://www.paulgraham.com/notnot.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/notnot.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/nov.html",
+      "effective_url": "https://www.paulgraham.com/nov.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/nov.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/nthings.html",
+      "effective_url": "https://www.paulgraham.com/nthings.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/nthings.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/opensource.html",
+      "effective_url": "https://www.paulgraham.com/opensource.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/opensource.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/organic.html",
+      "effective_url": "https://www.paulgraham.com/organic.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/organic.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/orth.html",
+      "effective_url": "https://www.paulgraham.com/orth.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/orth.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/own.html",
+      "effective_url": "https://www.paulgraham.com/own.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/own.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/patentpledge.html",
+      "effective_url": "https://www.paulgraham.com/patentpledge.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/patentpledge.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/pgh.html",
+      "effective_url": "https://www.paulgraham.com/pgh.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/pgh.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/pinch.html",
+      "effective_url": "https://www.paulgraham.com/pinch.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/pinch.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/polls.html",
+      "effective_url": "https://www.paulgraham.com/polls.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/polls.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/power.html",
+      "effective_url": "https://www.paulgraham.com/power.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/power.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/prcmc.html",
+      "effective_url": "https://www.paulgraham.com/prcmc.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/prcmc.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/procrastination.html",
+      "effective_url": "https://www.paulgraham.com/procrastination.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/procrastination.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/progbot.html",
+      "effective_url": "https://www.paulgraham.com/progbot.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/progbot.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/prop62.html",
+      "effective_url": "https://www.paulgraham.com/prop62.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/prop62.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/property.html",
+      "effective_url": "https://www.paulgraham.com/property.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/property.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/publishing.html",
+      "effective_url": "https://www.paulgraham.com/publishing.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/publishing.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/pypar.html",
+      "effective_url": "https://www.paulgraham.com/pypar.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/pypar.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ramenprofitable.html",
+      "effective_url": "https://www.paulgraham.com/ramenprofitable.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ramenprofitable.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/randomness.html",
+      "effective_url": "https://www.paulgraham.com/randomness.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/randomness.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/re.html",
+      "effective_url": "https://www.paulgraham.com/re.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/re.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/read.html",
+      "effective_url": "https://www.paulgraham.com/read.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/read.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/real.html",
+      "effective_url": "https://www.paulgraham.com/real.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/real.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/really.html",
+      "effective_url": "https://www.paulgraham.com/really.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/really.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/relres.html",
+      "effective_url": "https://www.paulgraham.com/relres.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/relres.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/revolution.html",
+      "effective_url": "https://www.paulgraham.com/revolution.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/revolution.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/richnow.html",
+      "effective_url": "https://www.paulgraham.com/richnow.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/richnow.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/road.html",
+      "effective_url": "https://www.paulgraham.com/road.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/road.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ronco.html",
+      "effective_url": "https://www.paulgraham.com/ronco.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ronco.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/safe.html",
+      "effective_url": "https://www.paulgraham.com/safe.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/safe.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/say.html",
+      "effective_url": "https://www.paulgraham.com/say.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/say.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/schlep.html",
+      "effective_url": "https://www.paulgraham.com/schlep.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/schlep.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/seesv.html",
+      "effective_url": "https://www.paulgraham.com/seesv.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/seesv.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/segway.html",
+      "effective_url": "https://www.paulgraham.com/segway.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/segway.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/selfindulgence.html",
+      "effective_url": "https://www.paulgraham.com/selfindulgence.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/selfindulgence.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/sfp.html",
+      "effective_url": "https://www.paulgraham.com/sfp.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/sfp.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/simply.html",
+      "effective_url": "https://www.paulgraham.com/simply.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/simply.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/smart.html",
+      "effective_url": "https://www.paulgraham.com/smart.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/smart.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/softwarepatents.html",
+      "effective_url": "https://www.paulgraham.com/softwarepatents.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/softwarepatents.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/spam.html",
+      "effective_url": "https://www.paulgraham.com/spam.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/spam.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/speak.html",
+      "effective_url": "https://www.paulgraham.com/speak.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/speak.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/start.html",
+      "effective_url": "https://www.paulgraham.com/start.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/start.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/startupfunding.html",
+      "effective_url": "https://www.paulgraham.com/startupfunding.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/startupfunding.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/startuphubs.html",
+      "effective_url": "https://www.paulgraham.com/startuphubs.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/startuphubs.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/startupideas.html",
+      "effective_url": "https://www.paulgraham.com/startupideas.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/startupideas.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/startupmistakes.html",
+      "effective_url": "https://www.paulgraham.com/startupmistakes.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/startupmistakes.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/stuff.html",
+      "effective_url": "https://www.paulgraham.com/stuff.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/stuff.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/superlinear.html",
+      "effective_url": "https://www.paulgraham.com/superlinear.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/superlinear.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/swan.html",
+      "effective_url": "https://www.paulgraham.com/swan.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/swan.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/tablets.html",
+      "effective_url": "https://www.paulgraham.com/tablets.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/tablets.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/talk.html",
+      "effective_url": "https://www.paulgraham.com/talk.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/talk.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/taste.html",
+      "effective_url": "https://www.paulgraham.com/taste.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/taste.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/think.html",
+      "effective_url": "https://www.paulgraham.com/think.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/think.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/top.html",
+      "effective_url": "https://www.paulgraham.com/top.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/top.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/trolls.html",
+      "effective_url": "https://www.paulgraham.com/trolls.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/trolls.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/twitter.html",
+      "effective_url": "https://www.paulgraham.com/twitter.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/twitter.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/usa.html",
+      "effective_url": "https://www.paulgraham.com/usa.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/usa.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/users.html",
+      "effective_url": "https://www.paulgraham.com/users.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/users.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/venturecapital.html",
+      "effective_url": "https://www.paulgraham.com/venturecapital.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/venturecapital.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/wealth.html",
+      "effective_url": "https://www.paulgraham.com/wealth.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/wealth.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/webstartups.html",
+      "effective_url": "https://www.paulgraham.com/webstartups.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/webstartups.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/whyyc.html",
+      "effective_url": "https://www.paulgraham.com/whyyc.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/whyyc.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/word.html",
+      "effective_url": "https://www.paulgraham.com/word.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/word.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/words.html",
+      "effective_url": "https://www.paulgraham.com/words.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/words.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/work.html",
+      "effective_url": "https://www.paulgraham.com/work.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/work.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/writing44.html",
+      "effective_url": "https://www.paulgraham.com/writing44.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/writing44.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/wtax.html",
+      "effective_url": "https://www.paulgraham.com/wtax.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/wtax.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/yahoo.html",
+      "effective_url": "https://www.paulgraham.com/yahoo.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/yahoo.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ycombinator.html",
+      "effective_url": "https://www.paulgraham.com/ycombinator.html",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ycombinator.txt"
+    },
+    {
+      "url": "http://www.paulgraham.com/ycstart.html",
+      "effective_url": "https://www.paulgraham.com/ycstart.html",
+      "encoding": "windows-1252",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/html/ycstart.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/addiction.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/addiction.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/addiction.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/aord.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/aord.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/aord.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/apple.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/apple.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/apple.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/avg.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/avg.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/avg.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/before.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/before.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/before.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/bias.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/bias.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/bias.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/boss.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/boss.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/boss.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/copy.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/copy.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/copy.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/corpdev.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/corpdev.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/corpdev.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/desres.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/desres.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/desres.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/diff.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/diff.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/diff.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/ecw.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/ecw.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/ecw.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/founders.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/founders.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/founders.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/foundervisa.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/foundervisa.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/foundervisa.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/gap.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/gap.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/gap.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/gba.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/gba.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/gba.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/gh.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/gh.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/gh.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/goodtaste.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/goodtaste.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/goodtaste.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/hubs.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/hubs.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/hubs.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/iflisp.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/iflisp.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/iflisp.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/island.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/island.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/island.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/know.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/know.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/know.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/langdes.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/langdes.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/langdes.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/laundry.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/laundry.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/laundry.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/love.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/love.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/love.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/mod.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/mod.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/mod.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/newideas.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/newideas.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/newideas.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/nft.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/nft.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/nft.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/philosophy.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/philosophy.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/philosophy.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/popular.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/popular.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/popular.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/pow.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/pow.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/pow.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/rootsoflisp.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/rootsoflisp.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/rootsoflisp.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/rss.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/rss.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/rss.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/siliconvalley.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/siliconvalley.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/siliconvalley.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/startuplessons.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/startuplessons.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/startuplessons.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/submarine.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/submarine.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/submarine.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/sun.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/sun.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/sun.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/superangels.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/superangels.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/superangels.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/todo.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/todo.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/todo.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/unions.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/unions.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/unions.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/useful.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/useful.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/useful.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/vb.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/vb.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/vb.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/vcsqueeze.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/vcsqueeze.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/vcsqueeze.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/vw.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/vw.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/vw.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/want.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/want.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/want.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/web20.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/web20.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/web20.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/weird.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/weird.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/weird.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/wisdom.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/wisdom.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/wisdom.txt"
+    },
+    {
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack/raw/main/needlehaystack/PaulGrahamEssays/worked.txt",
+      "effective_url": "https://raw.githubusercontent.com/gkamradt/LLMTest_NeedleInAHaystack/main/needlehaystack/PaulGrahamEssays/worked.txt",
+      "encoding": "utf-8",
+      "text_file": "runs/qwen3_ruler/sources/essays_text/repo/worked.txt"
+    }
+  ],
+  "essay_concat_order": [
+    "runs/qwen3_ruler/sources/essays_text/repo/addiction.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/aord.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/apple.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/avg.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/before.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/bias.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/boss.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/copy.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/corpdev.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/desres.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/diff.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/ecw.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/founders.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/foundervisa.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/gap.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/gba.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/gh.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/goodtaste.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/hubs.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/iflisp.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/island.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/know.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/langdes.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/laundry.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/love.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/mod.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/newideas.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/nft.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/philosophy.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/popular.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/pow.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/rootsoflisp.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/rss.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/siliconvalley.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/startuplessons.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/submarine.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/sun.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/superangels.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/todo.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/unions.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/useful.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/vb.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/vcsqueeze.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/vw.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/want.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/web20.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/weird.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/wisdom.txt",
+    "runs/qwen3_ruler/sources/essays_text/repo/worked.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/13sentences.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/5founders.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/6631327.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/95.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ace.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/airbnb.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/airbnbs.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/alien.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/altair.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ambitious.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/america.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/angelinvesting.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/artistsship.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/badeconomy.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/better.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/bronze.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/bubble.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/charisma.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/cities.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/college.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/colleges.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/conformism.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/control.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/convergence.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/convince.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/cred.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/credentials.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/determination.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/die.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/disagree.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/disc.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/discover.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/distraction.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/divergence.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/donate.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ds.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/early.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/earnest.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/equity.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/essay.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ffb.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/fh.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/fix.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/fn.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/foundersatwork.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/fp.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/fr.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/fundraising.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/future.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/genius.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/getideas.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/good.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/goodart.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/googles.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/greatwork.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/growth.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/guidetoinvestors.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hackernews.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/head.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/herd.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/heresy.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/heroes.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/highres.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hiresfund.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hiring.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hp.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hs.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hundred.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hw.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/hwh.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/icad.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ideas.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/identity.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ineq.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/inequality.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/investors.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/invtrend.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/javacover.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/jessica.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/judgement.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/kate.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/kids.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ladder.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/lesson.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/lies.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/lwba.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/mac.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/makersschedule.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/marginal.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/maybe.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/mean.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/microsoft.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/mit.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/name.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/nerds.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/newthings.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/noob.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/noop.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/notnot.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/nov.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/nthings.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/opensource.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/organic.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/orth.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/own.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/patentpledge.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/pgh.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/pinch.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/polls.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/power.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/prcmc.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/procrastination.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/progbot.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/prop62.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/property.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/publishing.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/pypar.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ramenprofitable.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/randomness.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/re.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/read.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/real.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/really.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/relres.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/revolution.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/richnow.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/road.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ronco.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/safe.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/say.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/schlep.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/seesv.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/segway.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/selfindulgence.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/sfp.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/simply.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/smart.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/softwarepatents.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/spam.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/speak.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/start.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/startupfunding.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/startuphubs.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/startupideas.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/startupmistakes.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/stuff.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/superlinear.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/swan.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/tablets.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/talk.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/taste.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/think.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/top.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/trolls.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/twitter.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/usa.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/users.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/venturecapital.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/wealth.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/webstartups.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/whyyc.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/word.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/words.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/work.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/writing44.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/wtax.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/yahoo.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ycombinator.txt",
+    "runs/qwen3_ruler/sources/essays_text/html/ycstart.txt"
+  ],
+  "decoding": "UTF-8, Windows-1252 for legacy pages; encoding recorded per URL",
+  "all_essays_required": true
+}

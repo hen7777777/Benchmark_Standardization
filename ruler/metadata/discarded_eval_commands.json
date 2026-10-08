@@ -1,0 +1,34 @@
+[
+  {
+    "experiment": "native",
+    "samples_per_task": 10,
+    "length": 32768,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "-m",
+      "lm_eval",
+      "run",
+      "--model",
+      "local-completions",
+      "--model_args",
+      "model=qwen3-ruler,base_url=http://127.0.0.1:8013/v1/completions,tokenizer=/data/lpg_projects/mj/test/runs/qwen3_ruler/sources/tokenizer,tokenizer_backend=huggingface,tokenized_requests=True,add_bos_token=False,max_length=32769,num_concurrent=4,max_retries=1,truncate=False,seed=20261004",
+      "--tasks",
+      "ruler_local_10_32768",
+      "--include_path",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tasks",
+      "--batch_size",
+      "1",
+      "--num_fewshot",
+      "0",
+      "--seed",
+      "20261004",
+      "--output_path",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/results/native/10/32768",
+      "--log_samples"
+    ],
+    "output_path": "/data/lpg_projects/mj/test/runs/qwen3_ruler/results/native/10/32768",
+    "log": "/data/lpg_projects/mj/test/runs/qwen3_ruler/logs/eval_native_10_32768.log",
+    "status": "discarded duplicate run",
+    "archived_results": "runs/qwen3_ruler/tmp/duplicate_native_32768"
+  }
+]

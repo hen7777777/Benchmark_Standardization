@@ -1,0 +1,10 @@
+{
+  "experiment": "checkpoint_walkthrough",
+  "validated_samples": 130,
+  "tasks_per_length": 13,
+  "samples_per_task": 10,
+  "full_rendered_prompts_match_harness_arguments": true,
+  "retokenized_prompt_lengths_match": true,
+  "generation_budgets_match": true,
+  "sample_scores_and_group_means_match": true
+}

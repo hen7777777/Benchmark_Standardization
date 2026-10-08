@@ -1,0 +1,205 @@
+{
+  "base_url": "http://127.0.0.1:8013/v1/completions",
+  "server_models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "qwen3-ruler",
+        "object": "model",
+        "created": 1791106545,
+        "owned_by": "vllm",
+        "root": "/data/lpg_models/Qwen/Qwen3-0.6B",
+        "parent": null,
+        "max_model_len": 32768,
+        "permission": [
+          {
+            "id": "modelperm-89449e6fbc34c168",
+            "object": "model_permission",
+            "created": 1791106545,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "longest selected input per task, one generated token per probe; not benchmark scores",
+  "probes": [
+    {
+      "task": "cwe",
+      "sample_id": "cwe/4096/083",
+      "expected_prompt_tokens": 3965,
+      "server_usage": {
+        "prompt_tokens": 3965,
+        "total_tokens": 3966,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 120
+    },
+    {
+      "task": "fwe",
+      "sample_id": "fwe/4096/030",
+      "expected_prompt_tokens": 4022,
+      "server_usage": {
+        "prompt_tokens": 4022,
+        "total_tokens": 4023,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 50
+    },
+    {
+      "task": "niah_multikey_1",
+      "sample_id": "niah_multikey_1/4096/086",
+      "expected_prompt_tokens": 3968,
+      "server_usage": {
+        "prompt_tokens": 3968,
+        "total_tokens": 3969,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_multikey_2",
+      "sample_id": "niah_multikey_2/4096/008",
+      "expected_prompt_tokens": 3951,
+      "server_usage": {
+        "prompt_tokens": 3951,
+        "total_tokens": 3952,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_multikey_3",
+      "sample_id": "niah_multikey_3/4096/020",
+      "expected_prompt_tokens": 3956,
+      "server_usage": {
+        "prompt_tokens": 3956,
+        "total_tokens": 3957,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_multiquery",
+      "sample_id": "niah_multiquery/4096/017",
+      "expected_prompt_tokens": 3968,
+      "server_usage": {
+        "prompt_tokens": 3968,
+        "total_tokens": 3969,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_multivalue",
+      "sample_id": "niah_multivalue/4096/071",
+      "expected_prompt_tokens": 3966,
+      "server_usage": {
+        "prompt_tokens": 3966,
+        "total_tokens": 3967,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_single_1",
+      "sample_id": "niah_single_1/4096/020",
+      "expected_prompt_tokens": 3960,
+      "server_usage": {
+        "prompt_tokens": 3960,
+        "total_tokens": 3961,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_single_2",
+      "sample_id": "niah_single_2/4096/038",
+      "expected_prompt_tokens": 3967,
+      "server_usage": {
+        "prompt_tokens": 3967,
+        "total_tokens": 3968,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "niah_single_3",
+      "sample_id": "niah_single_3/4096/097",
+      "expected_prompt_tokens": 3967,
+      "server_usage": {
+        "prompt_tokens": 3967,
+        "total_tokens": 3968,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 128
+    },
+    {
+      "task": "qa_1",
+      "sample_id": "qa_1/4096/034",
+      "expected_prompt_tokens": 4064,
+      "server_usage": {
+        "prompt_tokens": 4064,
+        "total_tokens": 4065,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 32
+    },
+    {
+      "task": "qa_2",
+      "sample_id": "qa_2/4096/046",
+      "expected_prompt_tokens": 3640,
+      "server_usage": {
+        "prompt_tokens": 3640,
+        "total_tokens": 3641,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 32
+    },
+    {
+      "task": "vt",
+      "sample_id": "vt/4096/061",
+      "expected_prompt_tokens": 4063,
+      "server_usage": {
+        "prompt_tokens": 4063,
+        "total_tokens": 4064,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null
+      },
+      "probe_max_tokens": 1,
+      "task_max_gen_toks": 30
+    }
+  ]
+}

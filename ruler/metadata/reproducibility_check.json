@@ -1,0 +1,262 @@
+[
+  {
+    "task": "niah_single_1",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_single_1",
+      "--length",
+      "4096",
+      "--seed",
+      "20261004",
+      "--qa-seed",
+      "20461004"
+    ]
+  },
+  {
+    "task": "niah_single_2",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_single_2",
+      "--length",
+      "4096",
+      "--seed",
+      "20261005",
+      "--qa-seed",
+      "20461005"
+    ]
+  },
+  {
+    "task": "niah_single_3",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_single_3",
+      "--length",
+      "4096",
+      "--seed",
+      "20261006",
+      "--qa-seed",
+      "20461006"
+    ]
+  },
+  {
+    "task": "niah_multikey_1",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_multikey_1",
+      "--length",
+      "4096",
+      "--seed",
+      "20261007",
+      "--qa-seed",
+      "20461007"
+    ]
+  },
+  {
+    "task": "niah_multikey_2",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_multikey_2",
+      "--length",
+      "4096",
+      "--seed",
+      "20261008",
+      "--qa-seed",
+      "20461008"
+    ]
+  },
+  {
+    "task": "niah_multikey_3",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_multikey_3",
+      "--length",
+      "4096",
+      "--seed",
+      "20261009",
+      "--qa-seed",
+      "20461009"
+    ]
+  },
+  {
+    "task": "niah_multivalue",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_multivalue",
+      "--length",
+      "4096",
+      "--seed",
+      "20261010",
+      "--qa-seed",
+      "20461010"
+    ]
+  },
+  {
+    "task": "niah_multiquery",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "niah_multiquery",
+      "--length",
+      "4096",
+      "--seed",
+      "20261011",
+      "--qa-seed",
+      "20461011"
+    ]
+  },
+  {
+    "task": "vt",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "vt",
+      "--length",
+      "4096",
+      "--seed",
+      "20261012",
+      "--qa-seed",
+      "20461012"
+    ]
+  },
+  {
+    "task": "cwe",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "cwe",
+      "--length",
+      "4096",
+      "--seed",
+      "20261013",
+      "--qa-seed",
+      "20461013"
+    ]
+  },
+  {
+    "task": "fwe",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "fwe",
+      "--length",
+      "4096",
+      "--seed",
+      "20261014",
+      "--qa-seed",
+      "20461014"
+    ]
+  },
+  {
+    "task": "qa_1",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "qa_1",
+      "--length",
+      "4096",
+      "--seed",
+      "20261015",
+      "--qa-seed",
+      "20461015"
+    ]
+  },
+  {
+    "task": "qa_2",
+    "length": 4096,
+    "rows": 100,
+    "byte_equal": true,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "/data/lpg_projects/mj/test/scripts/generate_worker.py",
+      "--run-dir",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tmp/reproducibility_4096",
+      "--task",
+      "qa_2",
+      "--length",
+      "4096",
+      "--seed",
+      "20261016",
+      "--qa-seed",
+      "20461016"
+    ]
+  }
+]

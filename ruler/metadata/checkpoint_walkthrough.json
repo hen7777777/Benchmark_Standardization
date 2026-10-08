@@ -1,0 +1,25 @@
+{
+  "experiment": "checkpoint_walkthrough",
+  "created_utc": "2026-10-04T09:35:28.865218+00:00",
+  "checkpoint": "/data/lpg_models/Qwen/Qwen3-0.6B",
+  "gpu": 1,
+  "port": 8013,
+  "server_log": "logs/vllm_checkpoint_walkthrough.log",
+  "client_python": "/data/lpg_projects/mj/test/.venv/bin/python",
+  "server_python": "/home/lpg/anaconda3/bin/python",
+  "server_python_version": "3.13.5",
+  "scope": {
+    "lengths": [
+      4096
+    ],
+    "samples_per_task": 10,
+    "tasks": 13
+  },
+  "launch_command": "RULER_GPU=1 RULER_PORT=8013 RULER_CHECKPOINT=/data/lpg_models/Qwen/Qwen3-0.6B bash scripts/serve_native.sh",
+  "status": "complete",
+  "completed_utc": "2026-10-04T09:45:54.713456+00:00",
+  "ruler_score": 77.2051282051282,
+  "validated_samples": 130,
+  "endpoint_probes": 13,
+  "default_online_bitwise_reproducibility": false
+}

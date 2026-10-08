@@ -1,0 +1,28 @@
+group: longbench_v2_cot
+group_alias: LongBench v2 chain-of-thought
+task:
+  - longbench_v2_cot_academic_multi
+  - longbench_v2_cot_academic_single
+  - longbench_v2_cot_agent_history_qa
+  - longbench_v2_cot_detective
+  - longbench_v2_cot_dialogue_history_qa
+  - longbench_v2_cot_event_ordering
+  - longbench_v2_cot_financial_multi
+  - longbench_v2_cot_financial_single
+  - longbench_v2_cot_government_multi
+  - longbench_v2_cot_government_single
+  - longbench_v2_cot_graph_reasoning
+  - longbench_v2_cot_legal_multi
+  - longbench_v2_cot_legal_single
+  - longbench_v2_cot_literary
+  - longbench_v2_cot_code_repo_qa
+  - longbench_v2_cot_manyshot_learning
+  - longbench_v2_cot_multinews
+  - longbench_v2_cot_table_qa
+  - longbench_v2_cot_new_language_translation
+  - longbench_v2_cot_user_guide_qa
+aggregate_metric_list:
+  - metric: acc
+    weight_by_size: true
+metadata:
+  version: 1

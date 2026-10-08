@@ -1,0 +1,32 @@
+[
+  {
+    "experiment": "checkpoint_walkthrough",
+    "samples_per_task": 10,
+    "length": 4096,
+    "command": [
+      "/data/lpg_projects/mj/test/.venv/bin/python",
+      "-m",
+      "lm_eval",
+      "run",
+      "--model",
+      "local-completions",
+      "--model_args",
+      "model=qwen3-ruler,base_url=http://127.0.0.1:8013/v1/completions,tokenizer=/data/lpg_projects/mj/test/runs/qwen3_ruler/sources/tokenizer,tokenizer_backend=huggingface,tokenized_requests=True,add_bos_token=False,max_length=4097,num_concurrent=4,max_retries=1,truncate=False,seed=20261004",
+      "--tasks",
+      "ruler_local_10_4096",
+      "--include_path",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/tasks",
+      "--batch_size",
+      "1",
+      "--num_fewshot",
+      "0",
+      "--seed",
+      "20261004",
+      "--output_path",
+      "/data/lpg_projects/mj/test/runs/qwen3_ruler/results/checkpoint_walkthrough/10/4096",
+      "--log_samples"
+    ],
+    "output_path": "/data/lpg_projects/mj/test/runs/qwen3_ruler/results/checkpoint_walkthrough/10/4096",
+    "log": "/data/lpg_projects/mj/test/runs/qwen3_ruler/logs/eval_checkpoint_walkthrough_10_4096.log"
+  }
+]

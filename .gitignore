@@ -1,0 +1,19 @@
+# 忽略规则
+# 1) 可再生的运行产物：忽略。
+# 2) 数据集：暂不入库。RULER 冻结样本约 3.8 GB，其中 9 个文件 >90 MB，
+#    直接入 Git 既慢又会撞上 GitHub 100 MB 单文件上限；另行分发（本地远端 /
+#    Git LFS / 只留评测用长度之一），方案确定后删掉下面的 datasets/。
+# 3) 运行期必需或体量很小的定义与元数据：入库，否则换机器克隆后跑不起来。
+#      ruler/sources/         RULER 离线再生成输入（166 MB）
+#      ruler/metadata/        抽样索引、长度统计与哈希清单（820 KB）
+#      longbench_cot/tasks/   build_tasks.py 产物，但运行必需（缺失会预检失败）
+cache/
+runs/
+logs/
+__pycache__/
+*.pyc
+suite.local.env
+launcher*.log
+prefetch_report.json
+.rollback_*/
+datasets/

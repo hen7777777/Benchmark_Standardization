@@ -1,0 +1,23 @@
+task: longbench_v1_cot_multi_news
+tag:
+  - longbench_v1_cot_tasks
+dataset_path: Xnhyacinth/LongBench
+test_split: test
+dataset_name: multi_news
+doc_to_text: "You are given several news passages. Write a one-page summary of all news. \n\nNews:\n{{context}}\n\nNow, write a one-page summary of all the news.\n\nSummary:\n\nLet's think step by step, then write your final answer on a new line starting with \"Final answer:\"."
+doc_to_target: '{{answers}}'
+process_results: !function runtime_utils.v1_rouge
+generation_kwargs:
+  max_gen_toks: 1024
+  do_sample: false
+  temperature: 0.0
+  until: []
+metric_list:
+  - metric: score
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge_score
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1

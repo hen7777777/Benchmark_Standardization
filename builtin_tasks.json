@@ -1,0 +1,236 @@
+{
+  "suite": "harness_builtin_suite",
+  "description": "统一评测入口：按能力分为 math / code / complex_reasoning / general_reasoning / 长上下文（longbench_v1、longbench_v2、ruler），前四类与 longbench 用 lm-evaluation-harness 自带任务，RULER 用本项目冻结的本地数据；必填参数是 checkpoint 路径与 --gpu（物理卡号，不自动选卡）。",
+  "harness_commit": "d6de81643928d653435c431bae19945d41d32520",
+  "harness_source": "/data/lpg_projects/mj/test/vendor/lm-evaluation-harness",
+  "defaults": {
+    "stages": "math,code,complex_reasoning,general_reasoning,longbench_v1,longbench_v2",
+    "context_length": 32768,
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.8,
+    "seed": 20261008,
+    "apply_chat_template": false,
+    "cache_requests": false,
+    "ruler_samples": 100,
+    "ruler_lengths": [
+      4096,
+      8192,
+      16384,
+      32768
+    ],
+    "ruler_data_root": "datasets/long_context/ruler",
+    "model_backend": "server"
+  },
+  "stages": [
+    {
+      "name": "math",
+      "title": "数学（harness 内置任务）",
+      "kind": "builtin",
+      "tasks": [
+        "gsm8k_cot",
+        "minerva_math500"
+      ],
+      "batch_size": "auto",
+      "unsafe_code": false,
+      "max_num_seqs": 4,
+      "primary": [
+        [
+          "gsm8k_cot",
+          "exact_match,strict-match"
+        ],
+        [
+          "gsm8k_cot",
+          "exact_match,flexible-extract"
+        ],
+        [
+          "minerva_math500",
+          "exact_match,none"
+        ],
+        [
+          "minerva_math500",
+          "math_verify,none"
+        ]
+      ]
+    },
+    {
+      "name": "code",
+      "title": "代码（harness 内置任务）",
+      "kind": "builtin",
+      "tasks": [
+        "humaneval",
+        "humaneval_plus",
+        "mbpp",
+        "mbpp_plus"
+      ],
+      "batch_size": "auto",
+      "unsafe_code": true,
+      "max_num_seqs": 4,
+      "primary": [
+        [
+          "humaneval",
+          "pass@1,create_test"
+        ],
+        [
+          "humaneval_plus",
+          "pass@1,create_test"
+        ],
+        [
+          "mbpp",
+          "pass_at_1,none"
+        ],
+        [
+          "mbpp_plus",
+          "pass_at_1,none"
+        ]
+      ]
+    },
+    {
+      "name": "complex_reasoning",
+      "title": "复杂推理（harness 内置任务）",
+      "kind": "builtin",
+      "tasks": [
+        "bbh",
+        "drop",
+        "mmlu_pro"
+      ],
+      "batch_size": "auto",
+      "unsafe_code": false,
+      "max_num_seqs": 4,
+      "primary": [
+        [
+          "bbh",
+          "exact_match,get-answer"
+        ],
+        [
+          "drop",
+          "em,none"
+        ],
+        [
+          "drop",
+          "f1,none"
+        ],
+        [
+          "mmlu_pro",
+          "exact_match,custom-extract"
+        ]
+      ]
+    },
+    {
+      "name": "general_reasoning",
+      "title": "日常推理（harness 内置任务）",
+      "kind": "builtin",
+      "tasks": [
+        "mmlu"
+      ],
+      "batch_size": "auto",
+      "unsafe_code": false,
+      "max_num_seqs": 4,
+      "primary": [
+        [
+          "mmlu",
+          "acc,none"
+        ]
+      ]
+    },
+    {
+      "name": "longbench_v1",
+      "title": "LongBench v1（harness 内置 longbench 组，21 个数据集）（长上下文）",
+      "kind": "builtin",
+      "tasks": [
+        "longbench"
+      ],
+      "batch_size": 1,
+      "unsafe_code": false,
+      "primary": [
+        [
+          "longbench",
+          "score,none"
+        ]
+      ],
+      "max_num_seqs": 1,
+      "truncation_side": "left"
+    },
+    {
+      "name": "longbench_v2",
+      "title": "LongBench v2（harness 内置 longbench2 组）（长上下文）",
+      "kind": "builtin",
+      "tasks": [
+        "longbench2"
+      ],
+      "batch_size": 1,
+      "unsafe_code": false,
+      "primary": [
+        [
+          "longbench2",
+          "acc,none"
+        ]
+      ],
+      "max_num_seqs": 1,
+      "truncation_side": "left"
+    },
+    {
+      "name": "longbench_v1_cot",
+      "title": "LongBench v1 CoT（19 个数据集，先推理后作答；官方无 CoT，复用官方 per-dataset 指标）",
+      "kind": "cot",
+      "tasks": [
+        "longbench_v1_cot"
+      ],
+      "batch_size": 1,
+      "unsafe_code": false,
+      "primary": [
+        [
+          "longbench_v1_cot",
+          "score,none"
+        ]
+      ],
+      "max_num_seqs": 1,
+      "truncation_side": "left",
+      "include": "longbench_cot/tasks"
+    },
+    {
+      "name": "longbench_v2_cot",
+      "title": "LongBench v2 CoT（20 个子数据集，官方两段 CoT 合并为单次生成，官方提取+acc）",
+      "kind": "cot",
+      "tasks": [
+        "longbench_v2_cot"
+      ],
+      "batch_size": 1,
+      "unsafe_code": false,
+      "primary": [
+        [
+          "longbench_v2_cot",
+          "acc,none"
+        ]
+      ],
+      "max_num_seqs": 1,
+      "truncation_side": "left",
+      "include": "longbench_cot/tasks"
+    },
+    {
+      "name": "ruler",
+      "title": "RULER v1（本地冻结数据：13 任务 × 10samples/50samples/100samples × 4k-256k）",
+      "kind": "local_frozen",
+      "tasks": [],
+      "batch_size": 1,
+      "unsafe_code": false,
+      "ruler_local": true,
+      "primary": [],
+      "max_num_seqs": 1
+    }
+  ],
+  "notes": {
+    "human_eval_plus": "HumanEval+ 是 harness 内置任务 humaneval_plus（数据集 evalplus/humanevalplus），与 humaneval 共用 create_test 过滤器，主指标 pass@1,create_test；首次使用需联网 prefetch 一次数据集。",
+    "ruler_source": "RULER 阶段不使用 harness 内置的 ruler 任务（它每次加载都现场生成 500 条/任务/长度，并联网抓 SQuAD/HotpotQA）。这里改用本项目冻结的数据集 datasets/long_context/ruler，离线可跑、样本身份固定。",
+    "ruler_protocol": "冻结题目不因 checkpoint 变化而重新生成。用当前 checkpoint 的非 thinking 聊天模板渲染同一 input（单 user turn、add_generation_prompt=True、enable_thinking=False），再拼该题官方 answer prefix；不在 harness 外层重复套模板。",
+    "ruler_overlength": "名义长度由参考 Qwen3-0.6B tokenizer 定义，换 checkpoint 后实际 token 数会变。preflight 逐题用当前 checkpoint tokenizer 重新计数，超过有效窗口直接拒绝运行，不截断、不静默丢题。",
+    "ruler_cost": "默认 100samples × 4 个长度（4k/8k/16k/32k）× 13 任务 = 5200 条长上下文样本，因此不进入默认阶段；64k/128k/256k 数据完整保留，需显式给 --ruler-lengths 并放大 --context-length。",
+    "ruler_sampling": "抽样规则见 datasets/long_context/ruler/SAMPLING_PROTOCOL.md（可直接对应论文方法段），精确索引见 sampling_subsets.json，长度统计见 length_statistics.json；目录名 4k/8k/... 对应 4096/8192/... tokens。",
+    "ruler_isolation": "RULER 是唯一走 --include_path 的阶段（规格在 ruler/tasks.json，运行时生成任务 YAML）；其余阶段都是纯 harness 内置任务，口径不变。",
+    "categories": "阶段按能力划分：math / code / complex_reasoning / general_reasoning / 长上下文（longbench_v1、longbench_v2、ruler）。分类沿用 benchmark_suite_20261008 的 datasets 目录规定。",
+    "longbench_v1_cot": "LongBench v1 官方无 CoT 协议；此阶段为标准化 reason-then-answer 变体：直答提示词后追加 'Let's think step by step'，取最后一个 'Final answer:' 之后的内容按官方 per-dataset 指标打分。排除 lcc / repobench-p 两个代码补全任务。详见 longbench_cot/PROTOCOL.md。",
+    "longbench_v2_cot": "LongBench v2 官方 CoT 为两段式（0shot_cot.txt 生成推理 + 0shot_cot_ans.txt 生成答案）；lm-eval 单次生成只能合并为一段，提取正则与 acc 与官方 pred.py 完全一致。详见 longbench_cot/PROTOCOL.md。",
+    "gpu": "不自动选卡：--gpu 必填，值必须是 CUDA_VISIBLE_DEVICES 的物理卡号，个数需与 --tensor-parallel-size 一致。共享机器上先 nvidia-smi 看空闲卡再显式指定；同一张卡可以并行跑多个评测（各自 CUDA_VISIBLE_DEVICES 相同即可），套件不再做任何同卡互斥或全局锁。",
+    "shutdown_watchdog": "退出监控：原生阶段写出 results_*.json 后若进程静默超过 --shutdown-grace 秒（默认 60）仍不退出，套件会终止其进程组；结果保留、该阶段按成功计，并在 exit.json 的 watchdog 字段与 native.log 末尾记录。另有既存逻辑：日志出现 Traceback 且静默超过 90 秒（vLLM 引擎拖住已崩溃的 CLI）时同样终止并报错。",
+    "model_backend": "默认统一部署：预检全部通过后只启动一次 python -m vllm.entrypoints.openai.api_server，所有阶段用 --model local-completions 经 HTTP 打同一端口，最后在 finally 里终止整个进程组。旧的逐阶段 --model vllm 引擎仍可用 --model-backend inprocess 复现。并发：每阶段 num_concurrent 默认取该阶段的 max_num_seqs（数学/代码/复杂推理/日常推理 4，两个 longbench 1），--num-concurrent N 可整体覆盖；服务端 --max-num-seqs 取各阶段最大值。注意 loglikelihood 类任务（mmlu）依赖逐选项 logprob，两种后端在近似并列题上可能有极小抖动，同一份报告只应固定一种后端。"
+  }
+}

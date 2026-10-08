@@ -1,0 +1,8 @@
+{
+  "validated_samples": 520,
+  "tasks_per_length": 13,
+  "samples_per_task": 10,
+  "full_rendered_prompts_match_harness_requests": true,
+  "generation_budgets_match": true,
+  "sample_scores_and_group_means_match": true
+}

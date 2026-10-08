@@ -1,0 +1,23 @@
+task: longbench_v1_cot_passage_retrieval_en
+tag:
+  - longbench_v1_cot_tasks
+dataset_path: Xnhyacinth/LongBench
+test_split: test
+dataset_name: passage_retrieval_en
+doc_to_text: "Here are 30 paragraphs from Wikipedia, along with an abstract. Please determine which paragraph the abstract is from.\n\n{{context}}\n\nThe following is an abstract.\n\n{{question}}\n\nPlease enter the number of the paragraph that the abstract is from. The answer format must be like \"Paragraph 1\", \"Paragraph 2\", etc.\n\nThe answer is:\n\nLet's think step by step, then write your final answer on a new line starting with \"Final answer:\"."
+doc_to_target: '{{answers}}'
+process_results: !function runtime_utils.v1_retrieval
+generation_kwargs:
+  max_gen_toks: 1024
+  do_sample: false
+  temperature: 0.0
+  until: []
+metric_list:
+  - metric: score
+    aggregation: mean
+    higher_is_better: true
+  - metric: retrieval_score
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1
